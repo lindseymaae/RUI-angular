@@ -4,11 +4,385 @@
   <meta charset="utf-8">
   <title>ResponsiveDesign</title>
   <base href="/">
-
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://kit.fontawesome.com/76bad92527.js"></script>
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
-<body>
-  <app-root></app-root>
+<div id="site-wrapper">
+  <div id="site-canvas">
+    <div id="side-menu" hidden>
+      <body>
+        <app-root></app-root>
+   
+    </div>
+    <div class="top-border">
+      <div class="top-border-circle">
+        <i class="fas fa-caret-down"></i>
+      </div>
+    </div>
+    <header class="row">
+      <h1>LOGO</h1>
+      <div class="search-box clearfix">
+        <input type="text" placeholder="Search">
+        <button>GO</button>
+      </div>
+      <div class="header-buttons">
+        <button>
+          <i class="fas fa-user"></i>DIRECTORY
+        </button>
+        <button>
+          <i class="fas fa-map-marker-alt"></i>LOCATION
+        </button>
+        <button>
+          <i class="far fa-clock"></i>ENTER TIME
+        </button>
+        <button>
+          <i class="fas fa-plane"></i>TRAVEL
+        </button>
+        <button>
+          <i class="fab fa-wpforms"></i>FORMS
+        </button>
+      </div>
+      <div class="responsive-header-buttons">
+        <button>
+          <i class="fas fa-search"></i>
+        </button>
+        <!-- <button id="burger-menu"><i class="fas fa-bars"></i></button> -->
+        <button id="burger-menu">
+          <span style="margin-top: 3px"></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </header>
+    <nav class="clearfix">
+      <div class="row">
+        <div class="nav-bar">
+          <a href="#">DEPARTMENTS</a>
+          <a href="#">TOOLS</a>
+          <a href="#">ASSOCIATE CENTER</a>
+          <a href="#">PROJECT DELIVERY</a>
+        </div>
+        <div class="nav-welcome-box">
+          <p>Welcome, USER!</p>
+        </div>
+      </div>
+    </nav>
+    <div class="mobile-header-border" hidden></div>
+    <section class="news-section row">
+      <div class="panel-text-only market-news">
+        <div class="panel-header" hidden>
+          <i class="fas fa-caret-right"></i>
+          MARKET NEWS
+        </div>
+        <h3>MARKET NEWS</h3>
+        <div class="drop-down-content">
+          <ul class="square-bullet-list">
+            <li>
+              <a href="#">Student Housing Heats Up In St. Louis - 10/27/14</a>
+            </li>
+            <li>
+              <a href="#">Company Selected as Develop for Seven - 10/25/14</a>
+            </li>
+            <li>
+              <a href="#">Minneapolis Leaders Welcome Downtown - 9/30/14</a>
+            </li>
+          </ul>
+          <p class="view-more">
+            <a href="#">+ View More</a>
+          </p>
+        </div>
+      </div>
+      <div class="panel-text-only announcements">
+        <div class="panel-header" hidden>
+          <i class="fas fa-caret-right"></i>
+          ANNOUNCEMENTS
+        </div>
+        <h3>ANNOUNCEMENTS</h3>
+        <div class="drop-down-content">
+          <ul class="square-bullet-list">
+            <li>
+              <a href="#">Student Housing Heats Up In St. Louis - 10/27/14</a>
+            </li>
+            <li>
+              <a href="#">Company Selected as Develop for Seven - 10/25/14</a>
+            </li>
+            <li>
+              <a href="#">Minneapolis Leaders Welcome Downtown - 9/30/14</a>
+            </li>
+          </ul>
+          <p class="view-more">
+            <a href="#">+ View More</a>
+          </p>
+        </div>
+      </div>
+      <div class="panel-companynews-vertical panel-companynews-vertical-large">
+        <img src="assets/tile-lg.jpg" alt="office building">
+        <div class="panel-companynews-vertical-content">
+          <h2>COMPANY NEWS</h2>
+          <h4>
+            Military Service Provided Excellent Professional
+            Training for Company Employee
+          </h4>
+        </div>
+      </div>
+      <div class="panel-image-item-horizontal company-news-darkgray">
+        <img src="assets/tile-md.jpg" alt="office building">
+        <div class="company-news-content">
+          <h2>COMPANY NEWS</h2>
+          <h3>Tile Title Element</h3>
+        </div>
+      </div>
+      <div class="panel-image-item-horizontal company-news-lightgray">
+        <img src="assets/tile-md.jpg" alt="office building">
+        <div class="company-news-content">
+          <h2>COMPANY NEWS</h2>
+          <h3>Tile Title Element</h3>
+        </div>
+      </div>
+      <div class="panel-recently-signed event-list">
+        <div class="panel-header">
+          <i class="fas fa-caret-right"></i>
+          RECENTLY SIGNED
+        </div>
+        <div class="recently-signed-content drop-down-content">
+          <ul>
+            <li>
+              <img src="assets/Community-Power-Corporation_1059_750x501.jpg" alt="power company">
+              <div class="event-list-text">
+                <h4>Character Communication
+                  </h5>
+                  <p>12/24/2014</p>
+                  <p>Minneapolis, St. Paul</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/Community-Power-Corporation_1059_750x501.jpg" alt="power company">
+              <div class="event-list-text">
+                <h4>Character Communication
+                  </h5>
+                  <p>12/24/2014</p>
+                  <p>Minneapolis, St. Paul</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/Community-Power-Corporation_1059_750x501.jpg" alt="power company">
+              <div class="event-list-text">
+                <h4>Character Communication
+                  </h5>
+                  <p>12/24/2014</p>
+                  <p>Minneapolis, St. Paul</p>
+              </div>
+            </li>
+            <li>
+              <img src="assets/Community-Power-Corporation_1059_750x501.jpg" alt="power company">
+              <div class="event-list-text">
+                <h4>Character Communication
+                  </h5>
+                  <p>12/24/2014</p>
+                  <p>Minneapolis, St. Paul</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="panel-image-item-horizontal panel-ceo-corner">
+        <img src="assets/tile-md.jpg" alt="office building">
+        <div class="company-news-content">
+          <h2>CEO'S CORNER</h2>
+          <h3>Tile Title Element</h3>
+        </div>
+      </div>
+      <div class="panel-companynews-vertical panel-companynews-vertical-small-blue vertical-small">
+        <img src="assets/tile-lg.jpg" alt="office building">
+        <div class="panel-companynews-vertical-content ">
+          <h4>The Latest News and Buzz On Company Projects</h4>
+        </div>
+      </div>
+      <div class="panel-companynews-vertical panel-companynews-vertical-small-gray vertical-small">
+        <img src="assets/tile-lg.jpg" alt="office building">
+        <div class="panel-companynews-vertical-content">
+          <h4>The Latest News and Buzz On Company Projects</h4>
+        </div>
+      </div>
+      <div class="panel-upcoming-events event-list">
+        <div class="panel-header">
+          <i class="fas fa-caret-right"></i>
+          UPCOMING EVENTS
+        </div>
+        <div class="upcoming-events-content drop-down-content">
+          <ul>
+            <li>
+              <div class="calender-date">
+                <span class="date">24</span>
+                <br>
+                <span class="month">NOV</span>
+              </div>
+              <div class="event-list-text">
+                <h4>Event Title Celebration Gala
+                  </h5>
+                  <p>6:00pm - 8:00pm</p>
+                  <p>Minneapolis, MN</p>
+              </div>
+            </li>
+            <li>
+              <div class="calender-date">
+                <span class="date">24</span>
+                <br>
+                <span class="month">NOV</span>
+              </div>
+              <div class="event-list-text">
+                <h4>Event Title Celebration Gala
+                  </h5>
+                  <p>6:00pm - 8:00pm</p>
+                  <p>Minneapolis, MN</p>
+              </div>
+            </li>
+            <li>
+              <div class="calender-date">
+                <span class="date">24</span>
+                <br>
+                <span class="month">NOV</span>
+              </div>
+              <div class="event-list-text">
+                <h4>Event Title Celebration Gala
+                  </h5>
+                  <p>6:00pm - 8:00pm</p>
+                  <p>Minneapolis, MN</p>
+              </div>
+            </li>
+            <li>
+              <div class="calender-date">
+                <span class="date">24</span>
+                <br>
+                <span class="month">NOV</span>
+              </div>
+              <div class="event-list-text">
+                <h4>Event Title Celebration Gala
+                  </h5>
+                  <p>6:00pm - 8:00pm</p>
+                  <p>Minneapolis, MN</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="bottom-nav row clearfix">
+      <div class="bottom-nav-links">
+        <a href="#">
+          <i class="fab fa-google-plus-square" style="color: #db3236"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-twitter-square" style="color:#1da1f2"></i>
+        </a>
+        <a href="#">
+          <i class="fab fa-youtube-square" style="color:#c4302b"></i>
+        </a>
+        <div class="bottom-nav-menu">
+          <a href="#">FEEDBACK</a>
+          <a href="#">SUPPORT</a>
+          <a href="#">COMPANY-GROUP.COM</a>
+        </div>
+      </div>
+      <img class="skyline-image" src="assets/minneapolis_skyline_5415.png" alt="minneapolis skyline">
+    </section>
+    <div class="bottom-nav-border"></div>
+    <footer>
+      <div class="footer-content row">
+        <div class="bottom-nav">
+          <div class="bottom-nav-links tablet-bottom-nav-links">
+            <div class="bottom-nav-menu">
+              <a href="#">FEEDBACK</a>
+              <a href="#">SUPPORT</a>
+              <a href="#">COMPANY-GROUP.COM</a>
+            </div>
+            <a href="#">
+              <i class="fab fa-google-plus-square" style="color: #db3236"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-twitter-square" style="color:#1da1f2"></i>
+            </a>
+            <a href="#">
+              <i class="fab fa-youtube-square" style="color:#c4302b"></i>
+            </a>
+          </div>
+        </div>
+        <div class="department-list">
+          <h4>DEPARTMENTS</h4>
+          <ul class="square-bullet-list">
+            <li>
+              <a href="#">Information Technoloy</a>
+            </li>
+            <li>
+              <a href="#">Legal</a>
+            </li>
+            <li>
+              <a href="#">Construction</a>
+            </li>
+            <li>
+              <a href="#">Company AE</a>
+            </li>
+            <li>
+              <a href="#">Forms</a>
+            </li>
+            <li>
+              <a href="#">Facilities</a>
+            </li>
+          </ul>
+          <ul class="square-bullet-list">
+            <li>
+              <a href="#">Associate Center</a>
+            </li>
+            <li>
+              <a href="#">Acccounting</a>
+            </li>
+            <li>
+              <a href="#">Marketing</a>
+            </li>
+            <li>
+              <a href="#">Risk</a>
+            </li>
+            <li>
+              <a href="#">Real Estate</a>
+            </li>
+            <li>
+              <a href="#">OPL</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list-side-border">
+          <h4>TECHNICAL SUPPORT</h4>
+          <ul class="square-bullet-list">
+            <li>
+              <a href="#">Time Tracking</a>
+            </li>
+            <li>
+              <a href="#">Tehcnical Support</a>
+            </li>
+            <li>
+              <a href="#">ONET Frequently Asked Questions</a>
+            </li>
+          </ul>
+        </div>
+        <div class="list-side-border">
+          <h4>APPLICATIONS</h4>
+          <ul class="square-bullet-list">
+            <li>
+              <a href="#">Time Tracking</a>
+            </li>
+            <li>
+              <a href="#">Tehcnical Support</a>
+            </li>
+            <li>
+              <a href="#">ONET Frequently Asked Questions</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
 </body>
+
 </html>
