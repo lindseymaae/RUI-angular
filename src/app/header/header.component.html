@@ -1,0 +1,36 @@
+<header class="row">
+
+  <h1>LOGO</h1>
+  <div class="search-box clearfix">
+    <input type="text" placeholder="Search">
+    <button>GO</button>
+  </div>
+  <div class="header-buttons">
+    <button>
+      <i class="fas fa-user"></i>DIRECTORY
+    </button>
+    <button>
+      <i class="fas fa-map-marker-alt"></i>LOCATION
+    </button>
+    <button>
+      <i class="far fa-clock"></i>ENTER TIME
+    </button>
+    <button>
+      <i class="fas fa-plane"></i>TRAVEL
+    </button>
+    <button>
+      <i class="fab fa-wpforms"></i>FORMS
+    </button>
+  </div>
+  <div class="responsive-header-buttons">
+    <button>
+      <i class="fas fa-search"></i>
+    </button>
+    <!-- <button id="burger-menu"><i class="fas fa-bars"></i></button> -->
+    <button id="burger-menu" (click)="handleClick($event)">
+      <span style="margin-top: 3px"></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+</header>
