@@ -1,72 +1,11 @@
 <section class="news-section row">
-  <app-market-news class="market-news panel-text-only"></app-market-news>
-  <div class="panel-text-only announcements">
-    <div class="panel-header" hidden>
-      <i class="fas fa-caret-right"></i>
-      ANNOUNCEMENTS
-    </div>
-    <h3>ANNOUNCEMENTS</h3>
-    <div class="drop-down-content">
-      <ul class="square-bullet-list">
-        <li *ngFor="let neews of news">
-          <a href="#">{{neews.description}}</a>
-        </li>
-      </ul>
-      <p class="view-more"><a href="#">+ View More</a></p>
-    </div>
-  </div>
+    <app-market-news class="market-news panel-text-only"></app-market-news>
+    <app-announcements class="panel-text-only announcements"></app-announcements>
 
-  <div class="panel-companynews-vertical panel-companynews-vertical-large">
-    <img src="assets/tile-lg.jpg" alt="office building">
-    <div class="panel-companynews-vertical-content">
-      <h2>COMPANY NEWS</h2>
-      <h4>Military Service Provided Excellent Professional
-        Training for Company Employee
-      </h4>
-    </div>
-  </div>
-  <div class="panel-image-item-horizontal company-news-darkgray">
-    <img src="assets/tile-md.jpg" alt="office building">
-    <div class="company-news-content">
-      <h2>COMPANY NEWS</h2>
-      <h3>Tile Title Element</h3>
-    </div>
-  </div>
-  <div class="panel-image-item-horizontal company-news-lightgray">
-    <img src="assets/tile-md.jpg" alt="office building">
-    <div class="company-news-content">
-      <h2>COMPANY NEWS</h2>
-      <h3>Tile Title Element</h3>
-    </div>
-  </div>
+<app-company-news style="display: contents;"></app-company-news>
 
-  <div class="panel-recently-signed event-list">
-    <div class="panel-header">
-      <i class="fas fa-caret-right"></i>
-      RECENTLY SIGNED
-    </div>
-    <div class="recently-signed-content drop-down-content">
-      <ul>
-        <li *ngFor="let event of events">
-          <div class="event-list-text">
-            <img src="assets/Community-Power-Corporation_1059_750x501.jpg" alt="power company">
-            <h4>{{event.name}}</h4>
-            <p>{{event.date}}</p>
-            <p>{{event.location}}</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-
-  <div class="panel-image-item-horizontal panel-ceo-corner">
-    <img src="assets/tile-md.jpg" alt="office building">
-    <div class="company-news-content">
-      <h2>CEO'S CORNER</h2>
-      <h3>Tile Title Element</h3>
-    </div>
-  </div>
+<app-recently-signed class="panel-recently-signed event-list"></app-recently-signed>
+<app-ceo-corner class="panel-image-item-horizontal panel-ceo-corner"></app-ceo-corner>
   <div class="panel-companynews-vertical panel-companynews-vertical-small-blue vertical-small">
     <img src="assets/tile-lg.jpg" alt="office building">
     <div class="panel-companynews-vertical-content ">
@@ -79,132 +18,9 @@
       <h4>The Latest News and Buzz On Company Projects</h4>
     </div>
   </div>
+<app-upcoming-events class="panel-upcoming-events event-list"></app-upcoming-events>
 
-  <div class="panel-upcoming-events event-list">
-    <div class="panel-header">
-      <i class="fas fa-caret-right"></i>
-      UPCOMING EVENTS
-    </div>
-    <div class="upcoming-events-content drop-down-content">
-      <ul>
-        <li>
-          <div class="calender-date">
-            <span class="date">24</span>
-            <br>
-            <span class="month">NOV</span>
-          </div>
-          <div class="event-list-text">
-            <h4>Event Title Celebration Gala</h4>
-            <p>6:00pm - 8:00pm </p>
-            <p>Minneapolis, MN</p>
-          </div>
-        </li>
-        <li>
-          <div class="calender-date">
-            <span class="date">24</span>
-            <br>
-            <span class="month">NOV</span>
-          </div>
-          <div class="event-list-text">
-            <h4>Event Title Celebration Gala</h4>
-            <p>6:00pm - 8:00pm </p>
-            <p>Minneapolis, MN</p>
-          </div>
-        </li>
-        <li>
-          <div class="calender-date">
-            <span class="date">24</span>
-            <br>
-            <span class="month">NOV</span>
-          </div>
-          <div class="event-list-text">
-            <h4>Event Title Celebration Gala</h4>
-            <p>6:00pm - 8:00pm </p>
-            <p>Minneapolis, MN</p>
-          </div>
-        </li>
-        <li>
-          <div class="calender-date">
-            <span class="date">24</span>
-            <br>
-            <span class="month">NOV</span>
-          </div>
-          <div class="event-list-text">
-            <h4>Event Title Celebration Gala</h4>
-            <p>6:00pm - 8:00pm </p>
-            <p>Minneapolis, MN</p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </div>
 </section>
 
-<section class="bottom-nav row clearfix">
-  <div class="bottom-nav-links">
-    <a href="#"><i class="fab fa-google-plus-square" style="color: #db3236"></i></a>
-    <a href="#"><i class="fab fa-twitter-square" style="color:#1da1f2"></i></a>
-    <a href="#"><i class="fab fa-youtube-square" style="color:#c4302b"></i></a>
-    <div class="bottom-nav-menu">
-      <a href="#">FEEDBACK</a>
-      <a href="#">SUPPORT</a>
-      <a href="#">COMPANY-GROUP.COM</a>
-    </div>
-  </div>
-  <img class="skyline-image" src="assets/minneapolis_skyline_5415.png" alt="minneapolis skyline">
-</section>
 
-<div class="bottom-nav-border"> </div>
 
-<footer>
-  <div class="footer-content row">
-    <div class="bottom-nav">
-      <div class="bottom-nav-links tablet-bottom-nav-links">
-        <div class="bottom-nav-menu">
-          <a href="#">FEEDBACK</a>
-          <a href="#">SUPPORT</a>
-          <a href="#">COMPANY-GROUP.COM</a>
-        </div>
-        <a href="#"><i class="fab fa-google-plus-square" style="color: #db3236"></i></a>
-        <a href="#"><i class="fab fa-twitter-square" style="color:#1da1f2"></i></a>
-        <a href="#"><i class="fab fa-youtube-square" style="color:#c4302b"></i></a>
-      </div>
-    </div>
-
-    <div class="department-list">
-      <h4>DEPARTMENTS</h4>
-      <ul class="square-bullet-list">
-        <li><a href="#">Information Technoloy</a></li>
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Construction</a></li>
-        <li><a href="#">Company AE</a></li>
-        <li><a href="#">Forms</a></li>
-        <li><a href="#">Facilities</a></li>
-      </ul>
-      <ul class="square-bullet-list">
-        <li><a href="#">Associate Center</a></li>
-        <li><a href="#">Acccounting</a></li>
-        <li><a href="#">Marketing</a></li>
-        <li><a href="#">Risk</a></li>
-        <li><a href="#">Real Estate</a></li>
-        <li><a href="#">OPL</a></li>
-      </ul>
-    </div>
-    <div class="list-side-border">
-      <h4>TECHNICAL SUPPORT</h4>
-      <ul class="square-bullet-list">
-        <li><a href="#">Time Tracking</a></li>
-        <li><a href="#">Tehcnical Support</a></li>
-        <li><a href="#">ONET Frequently Asked Questions</a></li>
-      </ul>
-    </div>
-    <div class="list-side-border">
-      <h4>APPLICATIONS</h4>
-      <ul class="square-bullet-list">
-        <li><a href="#">Time Tracking</a></li>
-        <li><a href="#">Tehcnical Support</a></li>
-        <li><a href="#">ONET Frequently Asked Questions</a></li>
-      </ul>
-    </div>
-  </div>
-</footer>
