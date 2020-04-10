@@ -6,13 +6,11 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { NavigationComponent } from './navigation/navigation.component';
 import { NewsSectionComponent } from './news-section/news-section.component';
-import { MarketNewsComponent } from './market-news/market-news.component';
-import { RecentlySignedComponent } from './recently-signed/recently-signed.component';
 import { AnnouncementsComponent } from './announcements/announcements.component';
 import { FooterComponent } from './footer/footer.component';
-import { UpcomingEventsComponent } from './upcoming-events/upcoming-events.component';
-import { CeoCornerComponent } from './ceo-corner/ceo-corner.component';
+import { ListSectionsComponent } from './list-sections/list-sections.component';
 import { CompanyNewsComponent } from './company-news/company-news.component';
+import { SideMenuComponent } from './side-menu/side-menu.component';
 
 @NgModule({
   declarations: [
@@ -20,13 +18,11 @@ import { CompanyNewsComponent } from './company-news/company-news.component';
     HeaderComponent,
     NavigationComponent,
     NewsSectionComponent,
-    MarketNewsComponent,
-    RecentlySignedComponent,
     AnnouncementsComponent,
     FooterComponent,
-    UpcomingEventsComponent,
-    CeoCornerComponent,
-    CompanyNewsComponent
+    ListSectionsComponent,
+    CompanyNewsComponent,
+    SideMenuComponent
   ],
   imports: [
     BrowserModule,

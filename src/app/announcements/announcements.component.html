@@ -1,13 +1,18 @@
-  <div class="panel-header" hidden>
-    <i class="fas fa-caret-right"></i>
-    <h3>ANNOUNCEMENTS</h3>
+<div *ngFor="let newsObject of news" style="display: contents;">
+  <div class="panel-text-only">
+    <div class="panel-header" hidden>
+      <i class="fas fa-caret-right"></i>
+      <h3>{{newsObject.title}}
+      </h3>
+    </div>
+    <h3>{{newsObject.title}}</h3>
+    <div class="drop-down-content">
+      <ul class="square-bullet-list">
+        <li *ngFor="let neews of news, let j = index ">
+          <a href="#">{{neews.data[j].description}} hi</a>
+        </li>
+      </ul>
+      <p class="view-more"><a href="#">+ View More</a></p>
+    </div>
   </div>
-  <h3>ANNOUNCEMENTS</h3>
-  <div class="drop-down-content">
-    <ul class="square-bullet-list">
-      <li *ngFor="let neews of news">
-        <a href="#">{{neews.description}}</a>
-      </li>
-    </ul>
-    <p class="view-more"><a href="#">+ View More</a></p>
-  </div>
+</div>

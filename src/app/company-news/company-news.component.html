@@ -1,23 +1,7 @@
-<div class="panel-companynews-vertical panel-companynews-vertical-large">
-  <img src="assets/tile-lg.jpg" alt="office building">
-  <div class="panel-companynews-vertical-content">
-    <h2>COMPANY NEWS</h2>
-    <p>Military Service Provided Excellent Professional
-      Training for Company Employee
-    </p>
-  </div>
-</div>
-<div class="panel-image-item-horizontal company-news-darkgray">
-  <img src="assets/tile-md.jpg" alt="office building">
-  <div class="company-news-content">
-    <h2>COMPANY NEWS</h2>
-    <p>Tile Title Element</p>
-  </div>
-</div>
-<div class="panel-image-item-horizontal company-news-lightgray">
-  <img src="assets/tile-md.jpg" alt="office building">
-  <div class="company-news-content">
-    <h2>COMPANY NEWS</h2>
-    <p>Tile Title Element</p>
+<div *ngFor="let news of companynews" [ngClass]="news.className">
+  <img [src]="news.imagePath" [alt]="news.imageAlt" >
+  <div [ngClass]="news.secondaryClass">
+    <h2>{{news.title}}</h2>
+    <p>{{news.description}}</p>
   </div>
 </div>

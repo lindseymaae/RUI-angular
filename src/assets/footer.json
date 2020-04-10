@@ -1,0 +1,44 @@
+[
+  {
+    "firstList": [
+      {
+        "description": "FEEDBACK"
+      },
+      {
+        "description": "SUPPORT"
+      },
+      {
+        "description": "COMPANY-GROUP.COM"
+      }
+    ]
+  },
+  {
+    "smIcons": [
+      {
+        "class": "fab fa-google-plus-square"
+      },
+      {
+        "class": "fab fa-twitter-square"
+      },
+      {
+        "class": "fab fa-youtube-square"
+      }
+    ]
+  },
+  {
+    "departmentList": [
+      { "description": "Information Technoloy" },
+      { "description": "Legal" },
+      { "description": "Construction" },
+      { "description": "Company AE" },
+      { "description": "Forms" },
+      { "description": "Facilities" },
+      { "description": "Associate Center" },
+      { "description": "Acccounting" },
+      { "description": "Marketing" },
+      { "description": "Risk" },
+      { "description": "Real Estate" },
+      { "description": "OPL" }
+    ]
+  }
+]

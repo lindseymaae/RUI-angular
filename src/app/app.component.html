@@ -1,35 +1,12 @@
-<div id="side-menu" hidden>
-  <ul>
-    <li class="onet-menu">ONET MENU</li>
-    <li><i class="fas fa-caret-right fa-lg"></i>MY LINKS</li>
-    <li class="site-navigation" hidden ><i class="fas fa-caret-right fa-lg" ></i>SITE NAVIGATION</li>
-    <div class="site-navigation-content side-menu-dropdown">
-      <ul>
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">DEPARTMENTS</a></li>
-        <li><a href="#">TOOLS</a></li>
-        <li><a href="#">ASSOCIATE CENTER</a></li>
-        <li><a href="#">PROJECT DELIVERY</a></li>
-      </ul>
-    </div>
-    <li (click)="sideMenuCaretClicked($event)" id="shortcuts"><i class="fas fa-caret-right fa-lg" ></i>SHORTCUTS</li>
-    <div class="header-buttons side-menu-dropdown">
-      <button><i class="fas fa-user"></i>DIRECTORY</button>
-      <button><i class="fas fa-map-marker-alt"></i>LOCATION</button>
-      <button><i class="far fa-clock"></i>ENTER TIME</button>
-      <button><i class="fas fa-plane"></i>TRAVEL</button>
-      <button><i class="fab fa-wpforms"></i>FORMS</button>
-    </div>
-  </ul>
-</div>
+
       <div class="top-border">
         <div class="top-border-circle">
           <i class="fas fa-caret-down"></i>
         </div>
       </div>
+<app-side-menu style="display: contents;"></app-side-menu>
 <app-header></app-header>
-<app-navigation></app-navigation>
+<app-navigation style="display: contents"></app-navigation>
 <app-news-section></app-news-section>
 <app-footer></app-footer>
-
 <router-outlet></router-outlet>

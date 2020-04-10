@@ -1,0 +1,43 @@
+<div class="panel-upcoming-events event-list">
+  <div class="panel-header">
+    <i class="fas fa-caret-right"></i>
+    UPCOMING EVENTS
+  </div>
+  <div class="upcoming-events-content drop-down-content">
+    <ul>
+      <li *ngFor="let event of newevents">
+        <div class="calender-date">
+          <span class="date">{{event.date}}</span>
+          <br>
+          <span class="month">{{event.month}}</span>
+        </div>
+        <div class="event-list-text">
+          <h4>{{event.name}}</h4>
+          <p>{{event.time}}</p>
+          <p>{{event.location}}</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+
+<div class="panel-recently-signed event-list">
+  <div class="panel-header">
+    <i class="fas fa-caret-right"></i>
+    RECENTLY SIGNED
+  </div>
+  <div class="recently-signed-content drop-down-content">
+    <ul>
+      <li *ngFor="let event of events">
+        <div class="event-list-text" style="display: flex">
+          <img src="assets/images/Community-Power-Corporation_1059_750x501.jpg" alt="power company" style="width: 30%">
+          <div style="width: 70%; margin-left: 10px">
+            <h4>{{event.name}}</h4>
+            <p>{{event.date}}</p>
+            <p>{{event.location}}</p>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

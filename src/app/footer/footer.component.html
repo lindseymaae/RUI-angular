@@ -1,15 +1,15 @@
 <section class="bottom-nav row clearfix">
-  <div class="bottom-nav-links">
-    <a href="#"><i class="fab fa-google-plus-square" style="color: #db3236"></i></a>
-    <a href="#"><i class="fab fa-twitter-square" style="color:#1da1f2"></i></a>
-    <a href="#"><i class="fab fa-youtube-square" style="color:#c4302b"></i></a>
-    <div class="bottom-nav-menu">
-      <a href="#">FEEDBACK</a>
-      <a href="#">SUPPORT</a>
-      <a href="#">COMPANY-GROUP.COM</a>
-    </div>
-  </div>
-  <img class="skyline-image" src="assets/minneapolis_skyline_5415.png" alt="minneapolis skyline">
+  <ul class="hidden-sm">
+    <li *ngFor="let icons of smIcons" class="bottom-nav-links">
+      <a href="#"><i [ngClass]="icons.class"></i></a>
+    </li>
+  </ul>
+  <ul class="hidden-sm">
+    <li class="bottom-nav-menu hidden-sm" *ngFor="let item of items">
+      <a href="#">{{item.description}}</a>
+    </li>
+  </ul>
+  <img class="skyline-image" src="assets/images/minneapolis_skyline_5415.png" alt="minneapolis skyline">
 </section>
 
 <div class="bottom-nav-border"> </div>
@@ -17,34 +17,21 @@
   <div class="footer-content row">
     <div class="bottom-nav">
       <div class="bottom-nav-links tablet-bottom-nav-links">
-        <div class="bottom-nav-menu">
-          <a href="#">FEEDBACK</a>
-          <a href="#">SUPPORT</a>
-          <a href="#">COMPANY-GROUP.COM</a>
-        </div>
-        <a href="#"><i class="fab fa-google-plus-square" style="color: #db3236"></i></a>
-        <a href="#"><i class="fab fa-twitter-square" style="color:#1da1f2"></i></a>
-        <a href="#"><i class="fab fa-youtube-square" style="color:#c4302b"></i></a>
+        <ul class="bottom-nav-menu" >
+          <li *ngFor="let item of items"><a href="#">{{item.description}}</a></li>
+        </ul>
+        <ul class="bottom-nav-menu">
+          <li *ngFor="let icons of smIcons">
+            <a href="#"><i [ngClass]="icons.class"></i></a>
+          </li>
+        </ul>
       </div>
     </div>
 
     <div class="department-list">
       <h4>DEPARTMENTS</h4>
-      <ul class="square-bullet-list">
-        <li><a href="#">Information Technoloy</a></li>
-        <li><a href="#">Legal</a></li>
-        <li><a href="#">Construction</a></li>
-        <li><a href="#">Company AE</a></li>
-        <li><a href="#">Forms</a></li>
-        <li><a href="#">Facilities</a></li>
-      </ul>
-      <ul class="square-bullet-list">
-        <li><a href="#">Associate Center</a></li>
-        <li><a href="#">Acccounting</a></li>
-        <li><a href="#">Marketing</a></li>
-        <li><a href="#">Risk</a></li>
-        <li><a href="#">Real Estate</a></li>
-        <li><a href="#">OPL</a></li>
+      <ul class="square-bullet-list" >
+        <li *ngFor="let item of departmentList"><a href="#">{{item.description}}</a></li>
       </ul>
     </div>
     <div class="list-side-border">

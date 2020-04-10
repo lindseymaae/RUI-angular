@@ -1,0 +1,48 @@
+[
+  {
+    "title": "Company News",
+    "description": "Military Service Provided Excellent Professional Training for Company Employee",
+    "className": "panel-companynews-vertical panel-companynews-vertical-large",
+    "imagePath": "assets/images/tile-lg.jpg",
+    "imageAlt": "office building",
+    "secondaryClass": "panel-companynews-vertical-content"
+  },
+  {
+    "title": "Company News",
+    "description": "Tile Title Element",
+    "className": "panel-image-item-horizontal company-news-darkgray",
+    "imagePath": "assets/images/tile-md.jpg",
+    "imageAlt": "office building",
+    "secondaryClass": "company-news-content"
+  },
+  {
+    "title": "Company News",
+    "description": "Tile Title Element",
+    "className": "panel-image-item-horizontal company-news-lightgray",
+    "imagePath": "assets/images/tile-md.jpg",
+    "imageAlt": "office building",
+    "secondaryClass": "company-news-content"
+  },
+  {
+    "title": "Ceo Corner",
+    "description": "Tile Title Element",
+    "className": "panel-image-item-horizontal panel-ceo-corner",
+    "imagePath": "assets/images/tile-md.jpg",
+    "imageAlt": "office building",
+    "secondaryClass": "company-news-content"
+  },
+  {
+    "title": "The Latest News and Buzz On Company Projects",
+    "className": "panel-companynews-vertical panel-companynews-vertical-small-blue vertical-small",
+    "imagePath": "assets/images/tile-lg.jpg",
+    "imageAlt": "office building",
+    "secondaryClass": "panel-companynews-vertical-content "
+  },
+  {
+    "title": "The Latest News and Buzz On Company Projects",
+    "className": "panel-companynews-vertical panel-companynews-vertical-small-gray vertical-small",
+    "imagePath": "assets/images/tile-lg.jpg",
+    "imageAlt": "office building",
+    "secondaryClass": "panel-companynews-vertical-content "
+  }
+]
