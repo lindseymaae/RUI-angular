@@ -1,7 +1,5 @@
 import { Component, OnInit } from "@angular/core";
 import News from "../../assets/news.json";
-
-
 @Component({
   selector: "app-announcements",
   templateUrl: "./announcements.component.html",
@@ -9,4 +7,5 @@ import News from "../../assets/news.json";
 
 export class AnnouncementsComponent {
   news: any = News;
+  news2: any = News.data
 }

@@ -1,0 +1,30 @@
+[
+  {
+    "title": "MY LINKS"
+  },
+  {
+    "title": "shortcuts",
+    "list": [
+      {
+        "description": "DIRECTORY",
+        "iclass": "fas fa-user"
+      },
+      {
+        "description": "LOCATION",
+        "iclass": "fas fa-map-marker-alt"
+      },
+      {
+        "description": "ENTER TIME",
+        "iclass": "fas fa-clock"
+      },
+      {
+        "description": "TRAVEL",
+        "iclass": "fas fa-plane"
+      },
+      {
+        "description": "Forms",
+        "iclass": "fab fa-wpforms"
+      }
+    ]
+  }
+]

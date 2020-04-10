@@ -6,21 +6,7 @@
     <button>GO</button>
   </div>
   <div class="header-buttons">
-    <button>
-      <i class="fas fa-user"></i>DIRECTORY
-    </button>
-    <button>
-      <i class="fas fa-map-marker-alt"></i>LOCATION
-    </button>
-    <button>
-      <i class="far fa-clock"></i>ENTER TIME
-    </button>
-    <button>
-      <i class="fas fa-plane"></i>TRAVEL
-    </button>
-    <button>
-      <i class="fab fa-wpforms"></i>FORMS
-    </button>
+      <button *ngFor="let newItem of menu[1].list"><i [ngClass]="newItem.iclass"></i>{{newItem.description}}</button>
   </div>
   <div class="responsive-header-buttons">
     <button>

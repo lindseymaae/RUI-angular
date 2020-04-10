@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import newEvents from "../../assets/upcoming-events.json"
 import Events from "../../assets/events.json";
 
@@ -9,4 +9,7 @@ import Events from "../../assets/events.json";
 export class ListSectionsComponent {
   newevents: any = newEvents;
   events: any = Events;
+
+  title = "upcoming events"
+  title2 = "recently signed"
 }
